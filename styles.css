@@ -433,7 +433,9 @@ a:hover { color: var(--color-primary); }
   border-color: var(--color-accent);
   box-shadow: 0 0 0 3px rgba(61, 139, 139, 0.1);
 }
-.form-success { color: var(--color-accent); font-weight: 600; text-align: center; margin-top: 16px; }
+.form-success, .form-error { display: none; font-weight: 600; text-align: center; margin-top: 16px; }
+.form-success { color: var(--color-accent); }
+.form-error { color: #c0392b; }
 
 /* === Footer === */
 .footer {
