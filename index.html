@@ -260,7 +260,7 @@
             </div>
           </div>
         </div>
-        <form class="contact-form" onsubmit="event.preventDefault(); this.querySelector('.form-success').style.display='block'; this.querySelector('button').style.display='none';">
+        <form class="contact-form" id="contact-form">
           <div class="form-group">
             <label for="name">Name</label>
             <input type="text" id="name" name="name" required>
@@ -277,8 +277,9 @@
             <label for="message">How can we help?</label>
             <textarea id="message" name="message" rows="4" required></textarea>
           </div>
-          <button type="submit" class="btn btn-primary btn-full">Send Message</button>
-          <p class="form-success" style="display:none;">Thanks! We'll be in touch within one business day.</p>
+          <button type="submit" class="btn btn-primary btn-full" id="submit-btn">Send Message</button>
+          <p class="form-success" id="form-success">Thanks! We'll be in touch within one business day.</p>
+          <p class="form-error" id="form-error">Something went wrong. Please email us at hello@solidarity-tech.com instead.</p>
         </form>
       </div>
     </div>
@@ -318,6 +319,36 @@
           target.scrollIntoView({ behavior: 'smooth', block: 'start' });
           document.querySelector('.nav-links').classList.remove('open');
         }
+      });
+    });
+
+    // Contact form async submission
+    document.getElementById('contact-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      var btn = document.getElementById('submit-btn');
+      var success = document.getElementById('form-success');
+      var error = document.getElementById('form-error');
+      btn.disabled = true;
+      btn.textContent = 'Sending...';
+      success.style.display = 'none';
+      error.style.display = 'none';
+
+      fetch('https://usebasin.com/f/a8af566d78b8', {
+        method: 'POST',
+        headers: { 'Accept': 'application/json' },
+        body: new FormData(this)
+      }).then(function(res) {
+        if (res.ok) {
+          success.style.display = 'block';
+          btn.style.display = 'none';
+          e.target.reset();
+        } else {
+          throw new Error('Form submission failed');
+        }
+      }).catch(function() {
+        error.style.display = 'block';
+        btn.disabled = false;
+        btn.textContent = 'Send Message';
       });
     });
   </script>
