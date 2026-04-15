@@ -108,6 +108,16 @@ a:hover { color: var(--color-primary); }
   font-weight: 700;
   font-size: 1.1rem;
 }
+.nav-logo-img {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+}
+.footer-logo-img {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+}
 .nav-logo-text { letter-spacing: -0.02em; }
 .nav-links {
   display: flex;
