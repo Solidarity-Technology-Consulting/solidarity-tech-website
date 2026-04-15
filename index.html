@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Solidarity Technology Consulting</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo">
+        <span class="nav-logo-icon">S</span>
+        <span class="nav-logo-text">Solidarity</span>
+      </a>
+      <button class="nav-toggle" aria-label="Toggle menu" onclick="document.querySelector('.nav-links').classList.toggle('open')">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="#services">Services</a></li>
+        <li><a href="#why">Why Us</a></li>
+        <li><a href="#team">Team</a></li>
+        <li><a href="#process">Process</a></li>
+        <li><a href="#careers">Careers</a></li>
+        <li><a href="#contact" class="nav-cta">Get in Touch</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="hero">
+    <div class="hero-inner">
+      <div class="hero-content">
+        <h1>Technology that works <em>in solidarity</em> with your mission</h1>
+        <p class="hero-sub">We embed in your team to build the IT foundation your organization needs to thrive. Strategy, infrastructure, and automation from people who stick around.</p>
+        <div class="hero-actions">
+          <a href="#contact" class="btn btn-primary">Book a Discovery Call</a>
+          <a href="#services" class="btn btn-secondary">See Our Services</a>
+        </div>
+        <div class="hero-trust">
+          <span class="hero-trust-label">Trusted by organizations in</span>
+          <div class="hero-trust-tags">
+            <span>Government</span>
+            <span>Nonprofits</span>
+            <span>Small Business</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Services -->
+  <section class="services" id="services">
+    <div class="container">
+      <div class="section-header">
+        <h2>What we do</h2>
+        <p>Three ways we help organizations build a technology foundation that lasts.</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="6" y="6" width="36" height="36" rx="4" stroke="currentColor" stroke-width="2"/><path d="M16 24h16M24 16v16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="16" cy="16" r="2" fill="currentColor"/><circle cx="32" cy="32" r="2" fill="currentColor"/><circle cx="32" cy="16" r="2" fill="currentColor"/><circle cx="16" cy="32" r="2" fill="currentColor"/></svg>
+          </div>
+          <h3>Workflow Optimization</h3>
+          <p>We evaluate your existing workflows and identify where modern tools, automations, and AI can eliminate friction and save your team hours every week.</p>
+          <ul class="service-details">
+            <li>Process audit and mapping</li>
+            <li>AI and automation integration</li>
+            <li>Tool selection and implementation</li>
+            <li>Team training and adoption support</li>
+          </ul>
+        </div>
+        <div class="service-card featured">
+          <div class="service-icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="8" y="4" width="32" height="24" rx="3" stroke="currentColor" stroke-width="2"/><path d="M14 32h20M18 28v4M30 28v4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M16 14h16M16 18h10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="38" cy="38" r="6" stroke="currentColor" stroke-width="2"/><path d="M36 38l2 2 4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <h3>Managed IT Services</h3>
+          <p>Reliable infrastructure you don't have to think about. We handle your IT so your team stays productive and your data stays secure.</p>
+          <ul class="service-details">
+            <li>Network and infrastructure management</li>
+            <li>Security monitoring and compliance</li>
+            <li>Cloud migration and management</li>
+            <li>Help desk and ongoing support</li>
+          </ul>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M24 8v8M24 32v8M8 24h8M32 24h8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="24" cy="24" r="8" stroke="currentColor" stroke-width="2"/><circle cx="24" cy="24" r="16" stroke="currentColor" stroke-width="2" stroke-dasharray="4 4"/></svg>
+          </div>
+          <h3>Fractional CTO / CIO / CISO</h3>
+          <p>Senior technology leadership without the full-time cost. We embed in your team to set strategy and make the decisions that compound over years.</p>
+          <ul class="service-details">
+            <li>Technology strategy and roadmapping</li>
+            <li>Vendor evaluation and management</li>
+            <li>Security posture assessment</li>
+            <li>Board and stakeholder communication</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Solidarity -->
+  <section class="why" id="why">
+    <div class="container">
+      <div class="why-layout">
+        <div class="why-text">
+          <h2>Why "Solidarity"?</h2>
+          <p class="why-intro">Our name reflects how we work. We don't deliver a product and walk away. We embed ourselves in your mission.</p>
+          <div class="why-values">
+            <div class="why-value">
+              <h4>Integrated Partnership</h4>
+              <p>We work as an extension of your team, ensuring our solutions solve real operational pain points, not theoretical ones.</p>
+            </div>
+            <div class="why-value">
+              <h4>Data Sovereignty</h4>
+              <p>We prioritize the security and privacy of the clients and communities you serve. Your data stays yours.</p>
+            </div>
+            <div class="why-value">
+              <h4>Scalable Engineering</h4>
+              <p>We build for the future. Our systems are designed to grow as your organization gains momentum.</p>
+            </div>
+            <div class="why-value">
+              <h4>Trusted Experience</h4>
+              <p>From national-profile clients to organizations requiring the utmost confidence, we've built systems that hold up under scrutiny.</p>
+            </div>
+          </div>
+        </div>
+        <div class="why-stats">
+          <div class="stat-card">
+            <div class="stat-number">10+</div>
+            <div class="stat-label">Years of combined experience</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">3</div>
+            <div class="stat-label">Sectors served</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">100%</div>
+            <div class="stat-label">Client retention rate</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team -->
+  <section class="team" id="team">
+    <div class="container">
+      <div class="section-header">
+        <h2>Who you'll work with</h2>
+        <p>We're a small team by design. When you hire Solidarity, you work directly with us.</p>
+      </div>
+      <div class="team-grid">
+        <div class="team-card">
+          <div class="team-photo-placeholder">
+            <span>CS</span>
+          </div>
+          <h3>Cory Slocum</h3>
+          <p class="team-title">Co-Founder</p>
+          <p class="team-bio">Technology leader with deep experience across government, nonprofit, and private sectors. Specializes in IT strategy, infrastructure, and building systems that organizations can rely on for years.</p>
+          <a href="https://www.linkedin.com/in/coryjslocum/" target="_blank" rel="noopener" class="team-link">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M19 3a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h14m-.5 15.5v-5.3a3.26 3.26 0 00-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 011.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 001.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 00-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
+            LinkedIn
+          </a>
+        </div>
+        <div class="team-card">
+          <div class="team-photo-placeholder">
+            <span>DY</span>
+          </div>
+          <h3>Dae Yi</h3>
+          <p class="team-title">Co-Founder</p>
+          <p class="team-bio">Technologist with expertise in workflow automation, AI integration, and building scalable solutions. Focused on making technology work for people, not the other way around.</p>
+          <a href="https://www.linkedin.com/in/daeyi/" target="_blank" rel="noopener" class="team-link">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M19 3a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h14m-.5 15.5v-5.3a3.26 3.26 0 00-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 011.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 001.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 00-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
+            LinkedIn
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Process -->
+  <section class="process" id="process">
+    <div class="container">
+      <div class="section-header">
+        <h2>How it works</h2>
+        <p>From first conversation to ongoing partnership, here's what to expect.</p>
+      </div>
+      <div class="process-steps">
+        <div class="process-step">
+          <div class="step-number">1</div>
+          <h3>Discovery Call</h3>
+          <p>A free 30-minute conversation to understand your organization, your pain points, and whether we're the right fit.</p>
+        </div>
+        <div class="process-connector"></div>
+        <div class="process-step">
+          <div class="step-number">2</div>
+          <h3>Assessment & Proposal</h3>
+          <p>We dig into your current setup, identify quick wins and long-term opportunities, and deliver a clear proposal with scope and pricing.</p>
+        </div>
+        <div class="process-connector"></div>
+        <div class="process-step">
+          <div class="step-number">3</div>
+          <h3>Engagement Begins</h3>
+          <p>We embed in your team and start delivering. Regular check-ins, transparent communication, and measurable progress from day one.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Careers -->
+  <section class="careers" id="careers">
+    <div class="container">
+      <div class="careers-layout">
+        <div class="careers-text">
+          <h2>Work with us</h2>
+          <p class="careers-intro">We're a small, growing team that values autonomy, craftsmanship, and real impact over bureaucracy.</p>
+          <div class="careers-perks">
+            <div class="perk">
+              <h4>Meaningful work</h4>
+              <p>You'll work directly with clients across government, nonprofit, and private sectors on problems that matter.</p>
+            </div>
+            <div class="perk">
+              <h4>Real ownership</h4>
+              <p>Small team means you have a voice in every decision. No layers of management between you and the work.</p>
+            </div>
+            <div class="perk">
+              <h4>Growth by doing</h4>
+              <p>You'll touch strategy, architecture, implementation, and client relationships. No narrow swim lanes.</p>
+            </div>
+            <div class="perk">
+              <h4>Flexibility</h4>
+              <p>Remote-friendly, async-first, and focused on outcomes over hours logged.</p>
+            </div>
+          </div>
+          <a href="mailto:careers@solidarity-tech.com" class="btn btn-primary">Get in Touch About Opportunities</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="contact-layout">
+        <div class="contact-info">
+          <h2>Let's talk</h2>
+          <p>Ready to build the future of your organization? We'd love to hear what you're working on.</p>
+          <div class="contact-methods">
+            <div class="contact-method">
+              <h4>Email</h4>
+              <a href="mailto:hello@solidarity-tech.com">hello@solidarity-tech.com</a>
+            </div>
+            <div class="contact-method">
+              <h4>Schedule</h4>
+              <a href="#contact">Book a 30-minute discovery call</a>
+            </div>
+            <div class="contact-method">
+              <h4>LinkedIn</h4>
+              <a href="https://www.linkedin.com/in/coryjslocum/" target="_blank" rel="noopener">Cory Slocum</a>
+              <a href="https://www.linkedin.com/in/daeyi/" target="_blank" rel="noopener">Dae Yi</a>
+            </div>
+          </div>
+        </div>
+        <form class="contact-form" onsubmit="event.preventDefault(); this.querySelector('.form-success').style.display='block'; this.querySelector('button').style.display='none';">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="org">Organization</label>
+            <input type="text" id="org" name="org">
+          </div>
+          <div class="form-group">
+            <label for="message">How can we help?</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+          <p class="form-success" style="display:none;">Thanks! We'll be in touch within one business day.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <span class="nav-logo-icon">S</span>
+          <span class="footer-name">Solidarity Technology Consulting</span>
+        </div>
+        <div class="footer-links">
+          <a href="#services">Services</a>
+          <a href="#team">Team</a>
+          <a href="#careers">Careers</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <p class="footer-copy">&copy; 2025 Solidarity Technology Consulting. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Sticky nav on scroll
+    window.addEventListener('scroll', () => {
+      document.getElementById('nav').classList.toggle('scrolled', window.scrollY > 50);
+    });
+
+    // Smooth scroll for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          document.querySelector('.nav-links').classList.remove('open');
+        }
+      });
+    });
+  </script>
+</body>
+</html>
