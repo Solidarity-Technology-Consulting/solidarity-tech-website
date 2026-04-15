@@ -111,11 +111,15 @@ a:hover { color: var(--color-primary); }
 .nav-logo-img {
   width: 36px;
   height: 36px;
+  max-width: 36px;
+  max-height: 36px;
   object-fit: contain;
 }
 .footer-logo-img {
   width: 32px;
   height: 32px;
+  max-width: 32px;
+  max-height: 32px;
   object-fit: contain;
 }
 .nav-logo-text { letter-spacing: -0.02em; }
